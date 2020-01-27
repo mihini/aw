@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Contact</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="https://awave.se"
+        ><img src="images/Logotype.png" alt="awave logo"
+      /></a>
+      <div class="header__menu-content">
+        <nav class="header__prim-nav">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#">Clients</a></li>
+            <li class="header__menu-item"><a href="#">Services</a></li>
+            <li class="header__menu-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#sec-menu" class="hamburger">
+          <span class="hamburger__inner"></span>
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="sweden container section">
+        <div class="sweden__information">
+          <h1 class="section__title">Let us do something good!</h1>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna
+            leo, lobortis eu tempus ac, fringilla vel diam. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="sweden__offices">
+            <div class="sweden__office  section__office">
+              <h3 class="">Stockholm (HQ)</h3>
+              <address>
+                <a class="link--text" href="tel:+460855803850"
+                  >+46 (8) - 55 80 38 50</a
+                >
+                <a class="link" href="mailto:hej@awave.se">General questions</a>
+                <div class="section__address">
+                  Sveavägen 151 <br />
+                  113 46 Stockholm <br />
+                  Sweden
+                </div>
+              </address>
+            </div>
+
+            <div class="sweden__office section__office">
+              <h3>Support</h3>
+              <address>
+                <a class="link--text" href="tel:+460855803850"
+                  >+46 (8) - 55 80 38 50</a
+                >
+                <a class="link" href="mailto:hej@awave.se">Wordpress-support</a>
+                <a class="link" href="mailto:hej@awave.se">Drupal-support</a>
+                <a class="link" href="mailto:info@awave.se"
+                  >EpiServer & Umbraco-support</a
+                >
+              </address>
+            </div>
+
+            <div class="sweden__office  section__office">
+              <h3>Sales & Marketing</h3>
+              <address>
+                <a class="link--text" href="tel:+460855803850"
+                  >+46 (8) - 55 80 38 60</a
+                >
+                <a class="link" href="mailto:hej@awave.se">Send email</a>
+              </address>
+            </div>
+
+            <div class="sweden__office  section__office">
+              <h3>Economics & Purchase</h3>
+              <address>
+                <a class="link--text" href="tel:+460855803850"
+                  >+46 (8) - 55 80 38 50</a
+                >
+                <a class="link" href="mailto:hej@awave.se">Send email</a>
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <div class="sweden__map">
+          <div class="map-container">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 320 320"
+            >
+              <defs>
+                <clipPath id="maskmap">
+                  <!-- <polygon
+                    points="325,155 250,285 100,285 25,155 100,25 250,25 325,155 250,285"
+                  ></polygon> -->
+                  <polygon
+                    transform="translate(155.225892, 155.673359) rotate(-285.000000) translate(-155.225892, -155.673359) "
+                    points="155.225892 -4.32664146 293.789956 75.6733585 293.789956 235.673359 155.225892 315.673359 16.661827 235.673359 16.661827 75.6733585"
+                  ></polygon>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#maskmap)">
+                <foreignObject width="420" x="0" y="0" height="349">
+                  <div class="map" id="swedenmap"></div>
+                </foreignObject>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="contact container">
+        <div class="contact__gradient"></div>
+        <h2 class="contact__title section__title">Have any questions?</h2>
+        <p class="contact__desc">
+          Lorem ipsum dolor sit amet, +468-55 88 38 50 adipiscing elit. Sed urna
+          leo, lobortis eu tempus ac, fringilla vel diam.
+        </p>
+        <form class="contact__form form" action="">
+          <div class="form__section">
+            <label for="names">My name is</label>
+            <input
+              class="form__input"
+              id="names"
+              type="text"
+              placeholder="Firstname Lastname"
+            />
+          </div>
+          <div class="form__section">
+            <label for="interest">I’m interested in</label>
+            <input class="form__input" id="interest" type="text" />
+          </div>
+          <div class="form__section">
+            <label for="email">contact me through</label>
+            <input
+              class="form__input"
+              id="email"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form__section">
+            <label for="phone">or</label>
+            <input
+              class="form__input"
+              id="phone"
+              type="tel"
+              aria-labelledby="email"
+            />
+          </div>
+          <span class="contact__text"
+            >By clicking send, you’ll agree with our Privacy Policy.</span
+          >
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+      <section class="other-offices section container">
+        <div class="other-offices__content">
+          <h2 class="section__title">Our other offices</h2>
+          <div class="other-offices__offices">
+            <div class="section__office">
+              <h3>Copenhagen</h3>
+              <address>
+                <a class="link--text" href="tel:+45089871551"
+                  >+45(0)8-9871551</a
+                >
+                <a class="link" href="https://awave.dk">www.awave.dk</a>
+                <div class="section__address">
+                  Vesterbrogade 26,<br />
+                  1620 København V <br />
+                  Danmark
+                </div>
+              </address>
+            </div>
+            <div class="section__office">
+              <h3>Riga</h3>
+              <address>
+                <a class="link--text" href="tel:+37166164054">+371-66164054</a>
+                <a class="link" href="https://awave.lv">www.awave.lv</a>
+                <div class="section__address">
+                  Antonijas iela 8-10,<br />
+                  Riga, LV-1010,<br />
+                  Lettland
+                </div>
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="header__sec-nav" id="sec-menu">
+      <ul class="header__menu-list--side">
+        <li class="header__menu-item header__menu-item--close">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </li>
+        <li class="header__menu-item"><a href="#">Abc</a></li>
+        <li class="header__menu-item"><a href="#">CDF</a></li>
+        <li class="header__menu-item"><a href="#">HIJ</a></li>
+      </ul>
+    </nav>
+    <footer class="footer">
+      <div class="footer__content-prim">
+        <h3 class="footer__title">
+          (c) Copyright Awave AB 2019
+        </h3>
+        <div>
+          <address class="footer__address">
+            <span class="footer__address__address">
+              <i class="fas fa-map-marker-alt"></i>Sveavägen 151, 113 46
+              Stockholm
+            </span>
+            <a class="footer__address__phone" href="tel:+460855803850"
+              ><i class="fas fa-phone"></i>+46(8) 55 80 38 50</a
+            >
+          </address>
+          <a class="footer__anchor" href="#">Awaves privacy policy</a>
+        </div>
+      </div>
+      <div class="footer__content-sec web-icons">
+        <img
+          class="web-icons__img"
+          src="images/React-icon.png"
+          alt="react icon"
+        />
+        <img
+          class="web-icons__img"
+          src="images/umbraco.png"
+          alt="umbraco icon"
+        />
+        <img
+          class="web-icons__img"
+          src="images/wordpress.png"
+          alt="wordpress icon"
+        />
+        <img
+          class="web-icons__img"
+          src="images/laravel.png"
+          alt="laravel icon"
+        />
+        <img
+          class="web-icons__img"
+          src="images/epi_server.png"
+          alt="episerver icon"
+        />
+        <img
+          class="web-icons__img"
+          src="images/Drupal8.png"
+          alt="drupal icon"
+        />
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBasmcZo-s0u3BV-4Bh9jQUrBTUjHrL-os&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

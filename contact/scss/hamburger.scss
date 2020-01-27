@@ -1,0 +1,87 @@
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+
+  &:target {
+    width: 40px;
+  }
+
+  &:hover {
+
+    .hamburger {
+      &__inner {
+        &:before {
+          animation: bounce 0.6s;
+          animation-iteration-count: infinite;
+        }
+
+        &:after {
+          animation: bounce2 0.6s;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(1px);
+      ;
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounce2 {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-1px);
+      ;
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  &__inner {
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $dark;
+    position: absolute;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 4px;
+      border-radius: 2px;
+      position: absolute;
+      top: -10px;
+      background-color: $dark;
+
+    }
+
+
+    &:after {
+      top: 10px;
+    }
+  }
+}

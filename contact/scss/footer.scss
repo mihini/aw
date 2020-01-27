@@ -1,0 +1,37 @@
+.footer {
+  background-color: $dark;
+  text-align: center;
+  color: $light;
+
+  &__content-prim {
+    padding: 100px 0;
+  }
+
+  &__title {
+
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    margin-bottom: 15px;
+
+    &__address {
+      display: block;
+    }
+
+    &__phone {
+      color: $light;
+      text-decoration: none;
+    }
+  }
+
+  &__anchor {
+    color: $light;
+    font-size: 12px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

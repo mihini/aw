@@ -1,0 +1,41 @@
+.section {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include breakpoint(tablet) {
+    flex-direction: row;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    line-height: 1.7em;
+  }
+
+  &__office {
+    margin-bottom: 30px;
+    width: 100%;
+
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+  }
+
+  &__contact-text {
+    margin-bottom: 5px;
+  }
+
+  &__address {
+    line-height: 1.7em;
+  }
+
+  h3,
+  a,
+  span {
+    line-height: 1.7em;
+  }
+}

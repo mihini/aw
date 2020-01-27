@@ -1,0 +1,40 @@
+.sweden {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+
+  &__information {
+    width: 100%;
+
+    @include breakpoint(tablet-horizontal) {
+      width: 50%;
+    }
+  }
+
+  &__offices {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+
+  &__map {
+    width: 50%;
+    display: none;
+    position: absolute;
+    top: -120px;
+    right: -150px;
+
+
+    @include breakpoint(tablet-horizontal) {
+      display: block;
+    }
+
+    @include breakpoint(desktop) {
+      top: -100px;
+      right: -290px;
+    }
+  }
+}

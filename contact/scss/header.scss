@@ -1,0 +1,97 @@
+.header {
+  background-color: $light;
+  padding: 30px 2%;
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(tablet) {
+    padding: 20px 30px;
+  }
+
+  &__logo {
+    img {
+      width: 70px;
+
+      @include breakpoint(mobile) {
+        width: 100px;
+      }
+
+      @include breakpoint(tablet-horizontal) {
+        width: 140px;
+      }
+    }
+  }
+
+
+  &__menu-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-list {
+    &--side {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .header {
+        &__menu-item {
+          margin: 0;
+          border-bottom: 2px solid $lines;
+          // margin: 10px 0;
+
+          a {
+            text-transform: uppercase;
+            font-size: 16px;
+            width: 100%;
+            display: block;
+            padding: 20px 0
+          }
+
+          &--close {
+            text-align: right;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__menu-item {
+    display: inline-block;
+    margin-right: 10px;
+
+    @include breakpoint(tablet) {
+      margin-right: 30px;
+    }
+
+    a {
+      color: $dark;
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover {
+        color: $hov;
+      }
+    }
+  }
+
+
+  &__sec-nav {
+    right: -600px;
+    transition: all 300ms ease-in-out;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 320px;
+    height: 100vh;
+    background: $gray;
+    // @include breakpoints
+
+
+
+    &:target {
+      right: 0;
+    }
+  }
+}

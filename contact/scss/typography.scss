@@ -1,0 +1,45 @@
+h1 {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p,
+a,
+span,
+label,
+li,
+ul,
+address,
+button {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+
+}
+
+.link {
+  color: $primary;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+
+  &--text {
+    text-decoration: none;
+    color: $dark;
+  }
+}

@@ -1,0 +1,41 @@
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'typography';
+
+@import 'icons';
+
+@import 'header';
+@import 'button';
+@import 'footer';
+@import 'main';
+@import 'section';
+
+@import'contact';
+@import 'form';
+@import 'web-icons';
+@import 'hamburger';
+@import 'sweden';
+@import 'map';
+@import 'mask';
+@import 'other-offices';
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 2%;
+  max-width: 1440px;
+
+  @include breakpoint(mobile-horizontal) {
+    padding: 30px;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 30px 15%;
+  }
+
+}

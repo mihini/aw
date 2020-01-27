@@ -1,0 +1,12 @@
+.map {
+  height: 420px;
+  width: 100%;
+}
+
+.map-container {
+  width: 90%;
+
+  @include breakpoint(desktop) {
+    width: 70%;
+  }
+}
